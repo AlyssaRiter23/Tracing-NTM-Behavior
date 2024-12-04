@@ -1,0 +1,111 @@
+Input string: abbcc
+Machine Name: a*b*c*
+String accepted in 26 transitions.
+Depth of tree: 6
+Explored Paths Tree:
+Level 0 : [['', 'q0', 'abbcc']]
+Level 1 : [['a', 'q0', 'bbcc'], ['a', 'q1', 'bbcc'], ['a', 'q2', 'bbcc'], ['a', 'q3', 'bbcc']]
+Level 2 : [['ab', 'q1', 'bcc'], ['ab', 'q2', 'bcc'], ['ab', 'q3', 'bcc'], ['ab', 'q1', 'bcc'], ['ab', 'q2', 'bcc'], ['ab', 'q3', 'bcc']]
+Level 3 : [['abb', 'q1', 'cc'], ['abb', 'q2', 'cc'], ['abb', 'q3', 'cc'], ['abb', 'q1', 'cc'], ['abb', 'q2', 'cc'], ['abb', 'q3', 'cc']]
+Level 4 : [['abbc', 'q2', 'c'], ['abbc', 'q3', 'c'], ['abbc', 'q2', 'c'], ['abbc', 'q3', 'c']]
+Level 5 : [['abbcc', 'q2', '_'], ['abbcc', 'q3', '_'], ['abbcc', 'q2', '_'], ['abbcc', 'q3', '_']]
+Level 6 : [['abbcc_', 'qacc', '_']]Input string: abb
+Machine Name: a*b*c*
+String accepted in 18 transitions.
+Depth of tree: 4
+Explored Paths Tree:
+Level 0 : [['', 'q0', 'abb']]
+Level 1 : [['a', 'q0', 'bb'], ['a', 'q1', 'bb'], ['a', 'q2', 'bb'], ['a', 'q3', 'bb']]
+Level 2 : [['ab', 'q1', 'b'], ['ab', 'q2', 'b'], ['ab', 'q3', 'b'], ['ab', 'q1', 'b'], ['ab', 'q2', 'b'], ['ab', 'q3', 'b']]
+Level 3 : [['abb', 'q1', '_'], ['abb', 'q2', '_'], ['abb', 'q3', '_'], ['abb', 'q1', '_'], ['abb', 'q2', '_'], ['abb', 'q3', '_']]
+Level 4 : [['abb_', 'qacc', '_']]Input string: 1100
+Machine Name: equal number of 1s and 0s
+String accepted in 22 transitions.
+Depth of tree: 15
+Explored Paths Tree:
+Level 0 : [['', 'q0', '1100']]
+Level 1 : [['_', 'q2', '100']]
+Level 2 : [['_1', 'q2', '00']]
+Level 3 : [['_', 'q3', '1x0']]
+Level 4 : [['', 'q3', '_1x0']]
+Level 5 : [['_', 'q4', '1x0'], ['_', 'q5', '1x0']]
+Level 6 : [['_x', 'q2', 'x0']]
+Level 7 : [['_xx', 'q2', '0']]
+Level 8 : [['_x', 'q3', 'xx']]
+Level 9 : [['_', 'q3', 'xxx']]
+Level 10: [['', 'q3', '_xxx']]
+Level 11: [['_', 'q4', 'xxx'], ['_', 'q5', 'xxx']]
+Level 12: [['_x', 'q4', 'xx'], ['_x', 'q5', 'xx']]
+Level 13: [['_xx', 'q4', 'x'], ['_xx', 'q5', 'x']]
+Level 14: [['_xxx', 'q4', '_'], ['_xxx', 'q5', '_']]
+Level 15: [['_xx', 'q3', 'x_'], ['_xxx_', 'qacc', '_']]Input string: 11001
+Machine Name: equal number of 1s and 0s
+Input rejected
+Explored Paths Tree:
+Level 0 : [['', 'q0', '11001']]
+Level 1 : [['_', 'q2', '1001']]
+Level 2 : [['_1', 'q2', '001']]
+Level 3 : [['_', 'q3', '1x01']]
+Level 4 : [['', 'q3', '_1x01']]
+Level 5 : [['_', 'q4', '1x01'], ['_', 'q5', '1x01']]
+Level 6 : [['_x', 'q2', 'x01']]
+Level 7 : [['_xx', 'q2', '01']]
+Level 8 : [['_x', 'q3', 'xx1']]
+Level 9 : [['_', 'q3', 'xxx1']]
+Level 10: [['', 'q3', '_xxx1']]
+Level 11: [['_', 'q4', 'xxx1'], ['_', 'q5', 'xxx1']]
+Level 12: [['_x', 'q4', 'xx1'], ['_x', 'q5', 'xx1']]
+Level 13: [['_xx', 'q4', 'x1'], ['_xx', 'q5', 'x1']]
+Level 14: [['_xxx', 'q4', '1'], ['_xxx', 'q5', '1']]
+Level 15: [['_xxxx', 'q2', '_']]Input string: aaa
+Machine Name: a plus
+String accepted in 7 transitions.
+Depth of tree: 4
+Explored Paths Tree:
+Level 0 : [['', 'q1', 'aaa']]
+Level 1 : [['a', 'q1', 'aa'], ['a', 'q2', 'aa']]
+Level 2 : [['aa', 'q1', 'a'], ['aa', 'q2', 'a']]
+Level 3 : [['aaa', 'q1', '_'], ['aaa', 'q2', '_']]
+Level 4 : [['aa', 'qacc', 'a_']]Input string: aaaaaa
+Machine Name: a plus
+String accepted in 13 transitions.
+Depth of tree: 7
+Explored Paths Tree:
+Level 0 : [['', 'q1', 'aaaaaa']]
+Level 1 : [['a', 'q1', 'aaaaa'], ['a', 'q2', 'aaaaa']]
+Level 2 : [['aa', 'q1', 'aaaa'], ['aa', 'q2', 'aaaa']]
+Level 3 : [['aaa', 'q1', 'aaa'], ['aaa', 'q2', 'aaa']]
+Level 4 : [['aaaa', 'q1', 'aa'], ['aaaa', 'q2', 'aa']]
+Level 5 : [['aaaaa', 'q1', 'a'], ['aaaaa', 'q2', 'a']]
+Level 6 : [['aaaaaa', 'q1', '_'], ['aaaaaa', 'q2', '_']]
+Level 7 : [['aaaaa', 'qacc', 'a_']]Input string: aaaaaaaaa
+Machine Name: a plus
+String accepted in 19 transitions.
+Depth of tree: 10
+Explored Paths Tree:
+Level 0 : [['', 'q1', 'aaaaaaaaa']]
+Level 1 : [['a', 'q1', 'aaaaaaaa'], ['a', 'q2', 'aaaaaaaa']]
+Level 2 : [['aa', 'q1', 'aaaaaaa'], ['aa', 'q2', 'aaaaaaa']]
+Level 3 : [['aaa', 'q1', 'aaaaaa'], ['aaa', 'q2', 'aaaaaa']]
+Level 4 : [['aaaa', 'q1', 'aaaaa'], ['aaaa', 'q2', 'aaaaa']]
+Level 5 : [['aaaaa', 'q1', 'aaaa'], ['aaaaa', 'q2', 'aaaa']]
+Level 6 : [['aaaaaa', 'q1', 'aaa'], ['aaaaaa', 'q2', 'aaa']]
+Level 7 : [['aaaaaaa', 'q1', 'aa'], ['aaaaaaa', 'q2', 'aa']]
+Level 8 : [['aaaaaaaa', 'q1', 'a'], ['aaaaaaaa', 'q2', 'a']]
+Level 9 : [['aaaaaaaaa', 'q1', '_'], ['aaaaaaaaa', 'q2', '_']]
+Level 10: [['aaaaaaaa', 'qacc', 'a_']]Input string: aaaaaaaaaa
+
+Machine Name: a plus
+Execution stopped after reaching max depth of 10
+Explored Paths Tree:
+Level 0 : [['', 'q1', 'aaaaaaaaaa']]
+Level 1 : [['a', 'q1', 'aaaaaaaaa'], ['a', 'q2', 'aaaaaaaaa']]
+Level 2 : [['aa', 'q1', 'aaaaaaaa'], ['aa', 'q2', 'aaaaaaaa']]
+Level 3 : [['aaa', 'q1', 'aaaaaaa'], ['aaa', 'q2', 'aaaaaaa']]
+Level 4 : [['aaaa', 'q1', 'aaaaaa'], ['aaaa', 'q2', 'aaaaaa']]
+Level 5 : [['aaaaa', 'q1', 'aaaaa'], ['aaaaa', 'q2', 'aaaaa']]
+Level 6 : [['aaaaaa', 'q1', 'aaaa'], ['aaaaaa', 'q2', 'aaaa']]
+Level 7 : [['aaaaaaa', 'q1', 'aaa'], ['aaaaaaa', 'q2', 'aaa']]
+Level 8 : [['aaaaaaaa', 'q1', 'aa'], ['aaaaaaaa', 'q2', 'aa']]
+Level 9 : [['aaaaaaaaa', 'q1', 'a'], ['aaaaaaaaa', 'q2', 'a']]
+Level 10: [['aaaaaaaaaa', 'q1', '_']]
