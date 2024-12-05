@@ -22,17 +22,17 @@ def turing_machine_bfs(machine, input_string, max_depth=None, max_transitions=No
     transitions = machine["transitions"]
     explored_paths = []  # to record the explored tree
     transition_count = 0 # count the number of transitions that occur
-
+    configuration_count = 0 # count the number of configurations
     ## initialize the root node -> aka the starting configuration ##
     root = configuration(machine["start_state"], tape, 0, 0)
     queue = deque([root]) # create a queue that is accessible from the front and back of the configurations
     # print out the input string
     print(f"Input string: {input_string}")
-    file.write(f"Input string: {input_string}\n")
+    file.write(f"\nInput string: {input_string}\n")
     while queue:
         # pop the next configuration to explore
         current_node = queue.popleft()
-
+        configuration_count += 1
         # get the new configuration features (state, tape, head position, and search depth)
         current_state = current_node.state
         current_tape = current_node.tape
@@ -58,12 +58,14 @@ def turing_machine_bfs(machine, input_string, max_depth=None, max_transitions=No
         if current_state == machine["accept_state"]: # if in accept state halt and display stats to stdout & file
             print(f"Machine Name: {machine_name}")
             file.write(f"Machine Name: {machine_name}")
-            print(f"String accepted in {transition_count} transitions.")
-            file.write(f"\nString accepted in {transition_count} transitions.")
+            print(f"String accepted in {transition_count+1} transitions.")
+            file.write(f"\nString accepted in {transition_count+1} transitions.")
             print(f"Depth of tree: {depth}")
             file.write(f"\nDepth of tree: {depth}")
+            print(f"Configurations explored: {configuration_count}")  # Print explored configurations
+            file.write(f"\nConfigurations explored: {configuration_count}")
             print("\nExplored Paths Tree:")
-            file.write("\nExplored Paths Tree:")
+            file.write(f"\nExplored Paths Tree:")
             print_tree(explored_paths, file)
             return
         
@@ -73,16 +75,22 @@ def turing_machine_bfs(machine, input_string, max_depth=None, max_transitions=No
             file.write(f"\nMachine Name: {machine_name}")
             print(f"Execution stopped after reaching max depth of {max_depth}.")
             file.write(f"\nExecution stopped after reaching max depth of {max_depth}")
+            print(f"Configurations explored: {configuration_count}")  # Print explored configurations
+            file.write(f"\nConfigurations explored: {configuration_count}")
             print("\nExplored Paths Tree:")
-            file.write("\nExplored Paths Tree:")
+            file.write(f"\nExplored Paths Tree:")
             print_tree(explored_paths, file)
             return
         # check to ensure that the maximium number of transitions is not exceeded
         if max_transitions is not None and transition_count >= max_transitions:
             print(f"Machine Name: {machine_name}")
             file.write(f"Machine Name: {machine_name}")
-            print(f"Execution stopped after {transition_count} transitions.")
-            file.write(f"Execution stopped after {transition_count} transitions.")
+            print(f"Execution stopped after {transition_count+1} transitions.")
+            file.write(f"Execution stopped after {transition_count+1} transitions.")
+            print(f"Depth of tree: {depth}")
+            file.write(f"\nDepth of tree: {depth}")
+            print(f"Configurations explored: {configuration_count}")  # Print explored configurations
+            file.write(f"\nConfigurations explored: {configuration_count}")
             print("\nExplored Paths Tree:")
             file.write("\nExplored Paths Tree:")
             print_tree(explored_paths, file)
@@ -123,7 +131,11 @@ def turing_machine_bfs(machine, input_string, max_depth=None, max_transitions=No
     print(f"Machine Name: {machine_name}")
     file.write(f"Machine Name: {machine_name}")
     print(f"Input rejected in {transition_count+1} steps.")
-    file.write(f"\nInput rejected")
+    file.write(f"\nInput rejected in {transition_count+1} steps")
+    print(f"Depth of tree: {depth}")
+    file.write(f"\nDepth of tree: {depth}")
+    print(f"Configurations explored: {configuration_count}")  # Print explored configurations
+    file.write(f"\nConfigurations explored: {configuration_count}")
     print("\nExplored Paths Tree:")
     file.write("\nExplored Paths Tree:")
     print_tree(explored_paths, file)
@@ -174,4 +186,3 @@ if __name__ == "__main__":
 
     machine = parse_file(args.file)
     turing_machine_bfs(machine, args.input, args.max_depth, args.max_transitions, args.debug)
-
