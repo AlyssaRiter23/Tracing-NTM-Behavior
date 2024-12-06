@@ -39,7 +39,8 @@ Level 4 : [['aaaa', 'q1', '_'], ['aaaa', 'q2', '_']]
 Level 5 : [['aaa', 'qacc', 'a_']]
 
 Input string: aaaaa
-Machine Name: a plusExecution stopped after 11 transitions.
+Machine Name: a plus
+Execution stopped after 11 transitions.
 Depth of tree: 4
 Configurations explored: 9
 Average Non-determinism: 2.5
@@ -52,7 +53,7 @@ Level 4 : [['aaaa', 'q1', 'a'], ['aaaa', 'q2', 'a']]
 
 Input string: _
 Machine Name: a plus
-Input not accepted in 1 steps
+Input rejected in 1 steps
 Depth of tree: 0
 Configurations explored: 1
 Explored Paths Tree:
@@ -60,7 +61,7 @@ Level 0 : [['', 'q1', '_']]
 
 Input string:  
 Machine Name: a plus
-Input not accepted in 1 steps
+Input rejected in 1 steps
 Depth of tree: 0
 Configurations explored: 1
 Explored Paths Tree:
@@ -109,7 +110,7 @@ Level 32: [['xxx#xxx_', 'qacc', '_']]
 
 Input string: 011#0110
 Machine Name: w#w (DTM)
-Input not accepted in 32 steps
+Input rejected in 32 steps
 Depth of tree: 31
 Configurations explored: 32
 Average Non-determinism: 1.0
@@ -171,7 +172,7 @@ Level 13: [['_xx', 'q3', 'x_'], ['_xxx_', 'qacc', '_']]
 
 Input string: 01100
 Machine Name: equal number of 1s and 0s
-Input not accepted in 20 steps
+Input rejected in 20 steps
 Depth of tree: 13
 Configurations explored: 20
 Average Non-determinism: 1.46
@@ -222,7 +223,7 @@ Level 3 : [['ab_', 'qacc', '_']]
 
 Input string: d
 Machine Name: a*b*c*
-Input not accepted in 1 steps
+Input rejected in 1 steps
 Depth of tree: 0
 Configurations explored: 1
 Explored Paths Tree:
