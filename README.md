@@ -5,4 +5,4 @@ couldn’t be avoided), and then to Nondeterministic Turing Machines (NTMs) wher
 determinism is central to their computational power. In this project I explored such 
 automata in detail by building code that emulates NTM execution. I developed a code 
 that traces all possible execution paths that a nondeterministic TM (NTM)
-might take up until the time when it either accepts or rejects.
+might take up until the time when it accepts.
