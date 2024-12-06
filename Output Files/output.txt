@@ -38,19 +38,6 @@ Level 3 : [['aaa', 'q1', 'a'], ['aaa', 'q2', 'a']]
 Level 4 : [['aaaa', 'q1', '_'], ['aaaa', 'q2', '_']]
 Level 5 : [['aaa', 'qacc', 'a_']]
 
-Input string: aaaaa
-Machine Name: a plus
-Execution stopped after 11 transitions.
-Depth of tree: 4
-Configurations explored: 9
-Average Non-determinism: 2.5
-Explored Paths Tree:
-Level 0 : [['', 'q1', 'aaaaa']]
-Level 1 : [['a', 'q1', 'aaaa'], ['a', 'q2', 'aaaa']]
-Level 2 : [['aa', 'q1', 'aaa'], ['aa', 'q2', 'aaa']]
-Level 3 : [['aaa', 'q1', 'aa'], ['aaa', 'q2', 'aa']]
-Level 4 : [['aaaa', 'q1', 'a'], ['aaaa', 'q2', 'a']]
-
 Input string: _
 Machine Name: a plus
 Input rejected in 1 steps
