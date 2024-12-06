@@ -64,6 +64,8 @@ def turing_machine_bfs(machine, input_string, max_depth=None, max_transitions=No
             file.write(f"\nDepth of tree: {depth}")
             print(f"Configurations explored: {configuration_count}")  # Print explored configurations
             file.write(f"\nConfigurations explored: {configuration_count}")
+            print(f"Average Non-determinism: {round(transition_count/depth,2)}")
+            file.write(f"\nAverage Non-determinism: {round(transition_count/depth,2)}")
             print("\nExplored Paths Tree:")
             file.write(f"\nExplored Paths Tree:")
             print_tree(explored_paths, file)
@@ -77,6 +79,8 @@ def turing_machine_bfs(machine, input_string, max_depth=None, max_transitions=No
             file.write(f"\nExecution stopped after reaching max depth of {max_depth}")
             print(f"Configurations explored: {configuration_count}")  # Print explored configurations
             file.write(f"\nConfigurations explored: {configuration_count}")
+            print(f"Average Non-determinism: {round(transition_count/depth,2)}")
+            file.write(f"\nAverage Non-determinism: {round(transition_count/depth,2)}")
             print("\nExplored Paths Tree:")
             file.write(f"\nExplored Paths Tree:")
             print_tree(explored_paths, file)
@@ -91,6 +95,8 @@ def turing_machine_bfs(machine, input_string, max_depth=None, max_transitions=No
             file.write(f"\nDepth of tree: {depth}")
             print(f"Configurations explored: {configuration_count}")  # Print explored configurations
             file.write(f"\nConfigurations explored: {configuration_count}")
+            print(f"Average Non-determinism: {round(transition_count/depth,2)}")
+            file.write(f"\nAverage Non-determinism: {round(transition_count/depth,2)}")
             print("\nExplored Paths Tree:")
             file.write("\nExplored Paths Tree:")
             print_tree(explored_paths, file)
@@ -130,12 +136,15 @@ def turing_machine_bfs(machine, input_string, max_depth=None, max_transitions=No
     # if the queue is empty and input is not accepted
     print(f"Machine Name: {machine_name}")
     file.write(f"Machine Name: {machine_name}")
-    print(f"Input rejected in {transition_count+1} steps.")
-    file.write(f"\nInput rejected in {transition_count+1} steps")
+    print(f"Input not accepted in {transition_count+1} steps.")
+    file.write(f"\nInput not accepted in {transition_count+1} steps")
     print(f"Depth of tree: {depth}")
     file.write(f"\nDepth of tree: {depth}")
     print(f"Configurations explored: {configuration_count}")  # Print explored configurations
     file.write(f"\nConfigurations explored: {configuration_count}")
+    if (depth > 0):
+        print(f"Average Non-determinism: {round(transition_count/depth,2)}")
+        file.write(f"\nAverage Non-determinism: {round(transition_count/depth,2)}")
     print("\nExplored Paths Tree:")
     file.write("\nExplored Paths Tree:")
     print_tree(explored_paths, file)
