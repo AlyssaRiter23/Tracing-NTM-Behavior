@@ -241,3 +241,16 @@ Depth of tree: 0
 Configurations explored: 1
 Explored Paths Tree:
 Level 0 : [['', 'q0', 'd']]
+
+Input string: aabbbcc
+Machine Name: a*b*c*
+Execution stopped after reaching max depth of 5
+Configurations explored: 22
+Average Non-determinism: 5.2
+Explored Paths Tree:
+Level 0 : [['', 'q0', 'aabbbcc']]
+Level 1 : [['a', 'q0', 'abbbcc'], ['a', 'q1', 'abbbcc'], ['a', 'q2', 'abbbcc'], ['a', 'q3', 'abbbcc']]
+Level 2 : [['aa', 'q0', 'bbbcc'], ['aa', 'q1', 'bbbcc'], ['aa', 'q2', 'bbbcc'], ['aa', 'q3', 'bbbcc']]
+Level 3 : [['aab', 'q1', 'bbcc'], ['aab', 'q2', 'bbcc'], ['aab', 'q3', 'bbcc'], ['aab', 'q1', 'bbcc'], ['aab', 'q2', 'bbcc'], ['aab', 'q3', 'bbcc']]
+Level 4 : [['aabb', 'q1', 'bcc'], ['aabb', 'q2', 'bcc'], ['aabb', 'q3', 'bcc'], ['aabb', 'q1', 'bcc'], ['aabb', 'q2', 'bcc'], ['aabb', 'q3', 'bcc']]
+Level 5 : [['aabbb', 'q1', 'cc']]
