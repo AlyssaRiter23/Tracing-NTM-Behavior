@@ -19,7 +19,6 @@ String accepted in 8 transitions.
 Depth of tree: 4
 Configurations explored: 8
 Average Non-determinism: 1.75
-
 Explored Paths Tree:
 Level 0 : [['', 'q1', 'aaa']]
 Level 1 : [['a', 'q1', 'aa'], ['a', 'q2', 'aa']]
