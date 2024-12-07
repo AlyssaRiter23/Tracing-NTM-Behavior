@@ -77,6 +77,10 @@ def turing_machine_bfs(machine, input_string, max_depth=None, max_transitions=No
             file.write(f"\nMachine Name: {machine_name}")
             print(f"Execution stopped after reaching max depth of {max_depth}.")
             file.write(f"\nExecution stopped after reaching max depth of {max_depth}")
+            print(f"Number of Transitions: {transition_count+1}")
+            file.write(f"\nNumber of Transitions: {transition_count+1}")
+            print(f"Depth of tree: {depth}")
+            file.write(f"\nDepth of tree: {depth}")
             print(f"Configurations explored: {configuration_count}")  # Print explored configurations
             file.write(f"\nConfigurations explored: {configuration_count}")
             print(f"Average Non-determinism: {round(transition_count/depth,2)}")
