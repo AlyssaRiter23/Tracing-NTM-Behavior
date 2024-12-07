@@ -245,6 +245,8 @@ Level 0 : [['', 'q0', 'd']]
 Input string: aabbbcc
 Machine Name: a*b*c*
 Execution stopped after reaching max depth of 5
+Number of Transitions: 27
+Depth of tree: 5
 Configurations explored: 22
 Average Non-determinism: 5.2
 Explored Paths Tree:
