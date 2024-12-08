@@ -1,0 +1,16 @@
+table_NTM (2)
+Input String,Machine Name,Result,Transitions,Tree Depth,Configurations Explored,Average Non-determinism
+aaaaa,a plus,String accepted in 12 transitions.,12.0,6,12,2.0
+aaaaa,a plus,Execution stopped after reaching a max of 10 transitions,4,9,2.75,
+a,a plus,String accepted in 4 transitions.,4.0,2,4,2.0
+aaaa,a plus,String accepted in 10 transitions.,10.0,5,10,2.0
+_,a plus,Input rejected in 1 steps,1,0,1,NaN
+,a plus,Input rejected in 1 steps,1,0,1,NaN
+011#011,w#w (DTM),String accepted in 33 transitions.,33.0,32,33,1.03
+011#0110,w#w (DTM),Input rejected in 32 steps,32,31,32,1.03
+0110,equal number of 1s and 0s,String accepted in 22 transitions.,22.0,13,21,1.69
+01100,equal number of 1s and 0s,Input rejected in 20 steps,20,13,20,1.54
+aaabbcc,a*b*c*,String accepted in 35 transitions.,35.0,8,34,4.38
+ab,a*b*c*,String accepted in 13 transitions.,13.0,3,12,4.33
+d,a*b*c*,Input rejected in 1 steps,1,0,1,NaN
+aabbccc,a*b*c*,Execution stopped after reaching max depth of 5,27,5,22,5.4
