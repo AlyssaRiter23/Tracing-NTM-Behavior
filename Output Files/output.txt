@@ -3,7 +3,7 @@ Machine Name: a plus
 String accepted in 12 transitions.
 Depth of tree: 6
 Configurations explored: 12
-Average Non-determinism: 1.83
+Average Non-determinism: 2.0
 Explored Paths Tree:
 Level 0 : [['', 'q1', 'aaaaa']]
 Level 1 : [['a', 'q1', 'aaaa'], ['a', 'q2', 'aaaa']]
@@ -15,10 +15,10 @@ Level 6 : [['aaaa', 'qacc', 'a_']]
 
 Input string: aaaaa
 Machine Name: a plus
-Execution stopped after 11 transitions.
+Execution stopped after reaching a max of 10 transitions.
 Depth of tree: 4
 Configurations explored: 9
-Average Non-determinism: 2.5
+Average Non-determinism: 2.75
 Explored Paths Tree:
 Level 0 : [['', 'q1', 'aaaaa']]
 Level 1 : [['a', 'q1', 'aaaa'], ['a', 'q2', 'aaaa']]
@@ -26,25 +26,12 @@ Level 2 : [['aa', 'q1', 'aaa'], ['aa', 'q2', 'aaa']]
 Level 3 : [['aaa', 'q1', 'aa'], ['aaa', 'q2', 'aa']]
 Level 4 : [['aaaa', 'q1', 'a'], ['aaaa', 'q2', 'a']]
 
-Input string: aaa
-Machine Name: a plus
-String accepted in 8 transitions.
-Depth of tree: 4
-Configurations explored: 8
-Average Non-determinism: 1.75
-Explored Paths Tree:
-Level 0 : [['', 'q1', 'aaa']]
-Level 1 : [['a', 'q1', 'aa'], ['a', 'q2', 'aa']]
-Level 2 : [['aa', 'q1', 'a'], ['aa', 'q2', 'a']]
-Level 3 : [['aaa', 'q1', '_'], ['aaa', 'q2', '_']]
-Level 4 : [['aa', 'qacc', 'a_']]
-
 Input string: a
 Machine Name: a plus
 String accepted in 4 transitions.
 Depth of tree: 2
 Configurations explored: 4
-Average Non-determinism: 1.5
+Average Non-determinism: 2.0
 Explored Paths Tree:
 Level 0 : [['', 'q1', 'a']]
 Level 1 : [['a', 'q1', '_'], ['a', 'q2', '_']]
@@ -55,7 +42,7 @@ Machine Name: a plus
 String accepted in 10 transitions.
 Depth of tree: 5
 Configurations explored: 10
-Average Non-determinism: 1.8
+Average Non-determinism: 2.0
 Explored Paths Tree:
 Level 0 : [['', 'q1', 'aaaa']]
 Level 1 : [['a', 'q1', 'aaa'], ['a', 'q2', 'aaa']]
@@ -72,20 +59,20 @@ Configurations explored: 1
 Explored Paths Tree:
 Level 0 : [['', 'q1', '_']]
 
-Input string:  
+Input string: 
 Machine Name: a plus
 Input rejected in 1 steps
 Depth of tree: 0
 Configurations explored: 1
 Explored Paths Tree:
-Level 0 : [['', 'q1', ' ']]
+Level 0 : [['', 'q1', '_']]
 
 Input string: 011#011
 Machine Name: w#w (DTM)
 String accepted in 33 transitions.
 Depth of tree: 32
 Configurations explored: 33
-Average Non-determinism: 1.0
+Average Non-determinism: 1.03
 Explored Paths Tree:
 Level 0 : [['', 'q1', '011#011']]
 Level 1 : [['x', 'q2', '11#011']]
@@ -126,7 +113,7 @@ Machine Name: w#w (DTM)
 Input rejected in 32 steps
 Depth of tree: 31
 Configurations explored: 32
-Average Non-determinism: 1.0
+Average Non-determinism: 1.03
 Explored Paths Tree:
 Level 0 : [['', 'q1', '011#0110']]
 Level 1 : [['x', 'q2', '11#0110']]
@@ -166,7 +153,7 @@ Machine Name: equal number of 1s and 0s
 String accepted in 22 transitions.
 Depth of tree: 13
 Configurations explored: 21
-Average Non-determinism: 1.62
+Average Non-determinism: 1.69
 Explored Paths Tree:
 Level 0 : [['', 'q0', '0110']]
 Level 1 : [['_', 'q1', '110']]
@@ -188,7 +175,7 @@ Machine Name: equal number of 1s and 0s
 Input rejected in 20 steps
 Depth of tree: 13
 Configurations explored: 20
-Average Non-determinism: 1.46
+Average Non-determinism: 1.54
 Explored Paths Tree:
 Level 0 : [['', 'q0', '01100']]
 Level 1 : [['_', 'q1', '1100']]
@@ -210,7 +197,7 @@ Machine Name: a*b*c*
 String accepted in 35 transitions.
 Depth of tree: 8
 Configurations explored: 34
-Average Non-determinism: 4.25
+Average Non-determinism: 4.38
 Explored Paths Tree:
 Level 0 : [['', 'q0', 'aaabbcc']]
 Level 1 : [['a', 'q0', 'aabbcc'], ['a', 'q1', 'aabbcc'], ['a', 'q2', 'aabbcc'], ['a', 'q3', 'aabbcc']]
@@ -227,7 +214,7 @@ Machine Name: a*b*c*
 String accepted in 13 transitions.
 Depth of tree: 3
 Configurations explored: 12
-Average Non-determinism: 4.0
+Average Non-determinism: 4.33
 Explored Paths Tree:
 Level 0 : [['', 'q0', 'ab']]
 Level 1 : [['a', 'q0', 'b'], ['a', 'q1', 'b'], ['a', 'q2', 'b'], ['a', 'q3', 'b']]
@@ -248,7 +235,7 @@ Execution stopped after reaching max depth of 5
 Number of Transitions: 27
 Depth of tree: 5
 Configurations explored: 22
-Average Non-determinism: 5.2
+Average Non-determinism: 5.4
 Explored Paths Tree:
 Level 0 : [['', 'q0', 'aabbbcc']]
 Level 1 : [['a', 'q0', 'abbbcc'], ['a', 'q1', 'abbbcc'], ['a', 'q2', 'abbbcc'], ['a', 'q3', 'abbbcc']]
